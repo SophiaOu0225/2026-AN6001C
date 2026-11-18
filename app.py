@@ -18,7 +18,7 @@ def main():
 def dbs():
     return(render_template("dbs.html"))
 
-@app.route("/dbsPrep",methods=["GET","POST"])
+@app.route("/dbsPred",methods=["GET","POST"])
 def dbsPrep():
     q = float(request.form.get("q"))
     r = dbsModel.predict([[q]])
